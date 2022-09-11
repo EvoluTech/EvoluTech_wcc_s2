@@ -1,0 +1,65 @@
+.navbar .menu li {
+  margin-left: 4px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar .menu li:hover {
+
+ 
+  background-color: #FFAB00;
+  color: white;
+  
+
+}
+.navbar .menu li:active {
+  background-color: #FFAB00;
+  color: rgb(204, 202, 202);
+
+}
+
+.activexD{
+  background-color: #FFAB00;
+  color: rgb(255, 255, 255);
+}
+
+.legendexD img {
+  position: absolute;
+  top:55%;
+  left:67%;
+  width: 10px;
+  height: auto;
+  
+}
+
+
+@keyframes affichePerso {
+  100%{
+      width:500px;
+  }
+}
+
+/* @media screen and (max-width:720px) {
+
+  .default{
+    background-size: 280px;
+    width: 280px;
+    height: 180px;
+
+  }
+
+}
+@keyframes affichePerso {
+  100%{
+      width:280px;
+  }
+}
+@keyframes reverseX {
+  0%{
+      width: 280px;
+  }
+  100%{
+      width: 0px;
+  }
+} */

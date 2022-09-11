@@ -1,0 +1,359 @@
+.legendexD img {
+  position: absolute;
+  top: 55%;
+  left: 68%;
+  width: 10px;
+  height: auto;
+}
+
+/*Slide ito xD*/
+.default {
+  background-size: cover;
+  width: 398px;
+  height: 230px;
+}
+
+@keyframes affichePerso {
+  100% {
+    width: 398px;
+    height: 230px;
+  }
+}
+@keyframes reverseX {
+  100% {
+    width: 0px;
+    height: 230px;
+  }
+}
+
+@media screen and (max-width: 854px) {
+  .content .left {
+    height: 5%;
+  }
+}
+
+@media screen and (max-width: 1047px) {
+  .slider-image {
+    height: 200px;
+  }
+  .ambany {
+    margin-top: 35px;
+  }
+}
+
+@media screen and (max-width: 854px) {
+  .ambany #card {
+    padding-top: 1%;
+  }
+}
+
+@media screen and (min-width: 854px) {
+  .responsive-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 854px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ambony {
+    display: block;
+  }
+  .ambany {
+    justify-content: center;
+  }
+
+  body {
+    overflow-wrap: break-word;
+  }
+  .menu-user {
+    display: none;
+  }
+  .responsive-menu {
+    display: initial;
+  }
+
+  /*Slide ito xD*/
+  .default {
+    background-size: 280px;
+    width: 280px;
+    height: 180px;
+  }
+
+  @keyframes affichePerso {
+    100% {
+      width: 280px;
+      height: 180px;
+    }
+  }
+  @keyframes reverseX {
+    100% {
+      width: 0px;
+      height: 180px;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .default {
+    background-size: cover;
+    width: 480px;
+    height: 320px;
+  }
+
+  @keyframes affichePerso {
+    100% {
+      width: 480px;
+      height: 320px;
+    }
+  }
+  @keyframes reverseX {
+    0% {
+      width: 480px;
+      height: 320px;
+    }
+    100% {
+      width: 0px;
+      height: 320px;
+    }
+  }
+}
+
+@media screen and (max-width: 1565px) {
+  .default {
+    background-size: cover;
+    width: 380px;
+    height: 230px;
+  }
+
+  @keyframes affichePerso {
+    100% {
+      width: 380px;
+      height: 230px;
+    }
+  }
+  @keyframes reverseX {
+    0% {
+      width: 380px;
+      height: 230px;
+    }
+    100% {
+      width: 0px;
+      height: 230px;
+    }
+  }
+}
+@media screen and (max-width: 1424px) {
+  .default {
+    background-size: cover;
+    width: 355px;
+    height: 230px;
+  }
+
+  @keyframes affichePerso {
+    100% {
+      width: 355px;
+      height: 230px;
+    }
+  }
+  @keyframes reverseX {
+    0% {
+      width: 355px;
+      height: 230px;
+    }
+    100% {
+      width: 0px;
+      height: 230px;
+    }
+  }
+}
+@media screen and (max-width: 1350px) {
+  .default {
+    background-size: cover;
+    width: 345px;
+    height: 230px;
+  }
+
+  @keyframes affichePerso {
+    100% {
+      width: 345px;
+      height: 230px;
+    }
+  }
+  @keyframes reverseX {
+    0% {
+      width: 345px;
+      height: 230px;
+    }
+    100% {
+      width: 0px;
+      height: 230px;
+    }
+  }
+}
+@media screen and (max-width: 1300px) {
+  .legendexD img {
+    left: 72%;
+  }
+  .default {
+    background-size: cover;
+    width: 325px;
+    height: 230px;
+  }
+
+  @keyframes affichePerso {
+    100% {
+      width: 325px;
+      height: 230px;
+    }
+  }
+  @keyframes reverseX {
+    0% {
+      width: 325px;
+      height: 230px;
+    }
+    100% {
+      width: 0px;
+      height: 230px;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .legendexD img {
+    left: 74%;
+  }
+  .info-slider a {
+    font-size: 0.8em;
+    color: #ffab00;
+    text-decoration: underline;
+  }
+  .info-slider h2 {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .legendexD img {
+    left: 80%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .legendexD img {
+    left: 85%;
+  }
+}
+@media screen and (max-width: 1014px) {
+  .default {
+    background-size: cover;
+    width: 325px;
+    height: 210px;
+  }
+
+  @keyframes affichePerso {
+    100% {
+      width: 325px;
+      height: 210px;
+    }
+  }
+  @keyframes reverseX {
+    0% {
+      width: 325px;
+      height: 210px;
+    }
+    100% {
+      width: 0px;
+      height: 210px;
+    }
+  }
+}
+
+@media screen and (max-width: 1428px) {
+  body .courbe .courbe-img {
+    right: 30%;
+    transform: rotate(19deg);
+    height: 148vh;
+  }
+  body .clip-path-1 {
+    clip-path: polygon(
+      57% 1%,
+      55% 25%,
+      45% 60%,
+      37% 80%,
+      23% 100%,
+      0 100%,
+      0% 0%
+    );
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body .courbe .courbe-img {
+    right: 25%;
+    transform: rotate(19deg);
+    height: 148vh;
+  }
+}
+@media screen and (max-width: 1150px) {
+  body .courbe .courbe-img {
+    right: 20%;
+    transform: rotate(19deg);
+    height: 148vh;
+  }
+  .content .right footer .localite p {
+    padding-top: 6%;
+    padding-left: -180px;
+  }
+}
+@media screen and (max-width: 1013px) {
+  .info-slider {
+    padding-top: 5%;
+    /* padding-left: 0px; */
+  }
+}
+@media screen and (max-width: 987px) {
+  body .courbe .courbe-img {
+    right: 15%;
+  }
+}
+@media screen and (max-width: 855px) {
+  .default {
+    top: 0%;
+    left: 25%;
+  }
+}
+@media screen and (max-width: 730px) {
+  .default {
+    top: 0%;
+    left: 20%;
+  }
+}
+@media screen and (max-width: 683px) {
+  .info-slider {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 657px) {
+  .default {
+    top: 0%;
+    left: 15%;
+    right: 15%;
+  }
+  .nav {
+    padding-top: 8%;
+  }
+}
+@media screen and (max-width: 495px) {
+  .default {
+    left: 12%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .default {
+    left: -1%;
+  }
+  body .courbe .courbe-img {
+    display: none;
+  }
+}

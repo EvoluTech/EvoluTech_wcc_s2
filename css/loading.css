@@ -1,0 +1,135 @@
+.backload {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #fbfdff;
+  overflow: hidden;
+}
+.loader {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  animation: rotate 1s infinite;
+  height: 50px;
+  width: 50px;
+  z-index: 10000;
+}
+.backload h3 {
+  position: absolute;
+  top: 43%;
+  left: 48.5%;
+  height: 50px;
+  width: 100%;
+  z-index: 10000;
+  color: #6657f8;
+  font-size: 1.8em;
+  font-weight: 800;
+  animation: miova 1s infinite;
+}
+
+@media screen and (max-width: 420px) {
+  .backload h3 {
+    position: absolute;
+    top: 43%;
+    left: 38%;
+    height: 50px;
+    width: 100%;
+    z-index: 10000;
+    color: #6657f8;
+    font-size: 1.8em;
+    font-weight: 800;
+    animation: miova 1s infinite;
+  }
+  .loader {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    animation: rotate 1s infinite;
+    height: 50px;
+    width: 50px;
+    z-index: 10000;
+  }
+}
+
+@keyframes miova {
+  0% {
+    -webkit-transform: translateY(0.95px);
+    -moz-transform: translateY(0.95px);
+  }
+  50% {
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+  }
+  100% {
+    -webkit-transform: translateY(0.95px);
+    -moz-transform: translateY(0.95px);
+  }
+}
+
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+.loader:before {
+  animation: ball1 1s infinite;
+  background-color: rgb(231, 124, 216);
+  box-shadow: 30px 0 0 #ffb224;
+  margin-bottom: 10px;
+}
+.loader:after {
+  animation: ball2 1s infinite;
+  background-color: #5194e0;
+  box-shadow: 30px 0 0 #7735b6;
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.8);
+    -moz-transform: rotate(0deg) scale(0.8);
+  }
+  50% {
+    -webkit-transform: rotate(360deg) scale(1.2);
+    -moz-transform: rotate(360deg) scale(1.2);
+  }
+  100% {
+    -webkit-transform: rotate(720deg) scale(0.8);
+    -moz-transform: rotate(720deg) scale(0.8);
+  }
+}
+
+@keyframes ball1 {
+  0% {
+    box-shadow: 30px 0 0 #f8b334;
+  }
+  50% {
+    box-shadow: 0 0 0 #f8b334;
+    margin-bottom: 0;
+    -webkit-transform: translate(15px, 15px);
+    -moz-transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #f8b334;
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes ball2 {
+  0% {
+    box-shadow: 30px 0 0 #7735b6;
+  }
+  50% {
+    box-shadow: 0 0 0 #421a4e;
+    margin-top: -20px;
+    -webkit-transform: translate(15px, 15px);
+    -moz-transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #7735b6;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,373 @@
+/* navbar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: #50475D;
+  
+}
+.responsive-menu {
+  display: none;
+}
+body {
+  position: relative;
+ 
+
+}
+html {
+  background-color: rgb(255, 255, 255)
+}
+
+.container {
+  padding-right: 10%;
+  padding-top: 1%;
+  padding-left: 10%;
+  z-index: 2;
+}
+body {
+  font-family: Poppins, sans-serif;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  width: 100%;
+}
+.logo span {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.navbar {
+  margin-top: 4%;
+  margin-bottom: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.menu {
+  width: 100%;
+}
+.navbar .menu ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.95em;
+  /* background-color: aquamarine; */
+  width: 25%;
+  font-weight: 600;
+}
+
+.navbar .menu ul li {
+  padding:8px;
+  cursor: pointer;
+}
+.navbar .menu ul li.active {
+  background-color: #FFAB00;
+  color: white;
+  border-radius: 10px;
+  padding:8px;
+}
+
+.ancre {
+  position: relative;
+  height: 45px;
+  width: 45px;
+}
+.menu-user {
+  position: absolute;
+  left: -78%;
+  top: -125%;
+  width: 11%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-user a {
+  font-size: 1em;
+  color: #957CDD;
+}
+.menu-user .edit {
+  text-align: center;
+}
+.menu-user .edit .avatar {
+  border-radius: 50%;
+  height: 250%;
+  width: 75px;
+  /* margin-bottom: 7px; */
+  /* margin-right: 180px; */
+  /* background-color: aqua; */
+}
+
+.menu-user .edit .avatar .avatar-image img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+/* manomboka 1000px izy mijanona amn sisiny eny*/
+.menu-user .profile-user {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 18px;
+  font-size: 1em;
+}
+
+.menu-user .profile-user h3,
+.menu-user .profile-user span {
+  padding-top: 6px;
+  /* mix-blend-mode: hard-light; */
+}
+.menu-user .profile-user .email {
+  color: gray;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 45;
+}
+.menu-user .profile-user .email:hover {
+  color: #FFAB00;
+  text-decoration: underline;
+}
+.menu-user .profile-user .man {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+/* niova */
+.content .left {
+  flex: 1;
+  /* background-color: aqua; */
+  height: 100vh;
+  z-index: 78;
+  
+}
+@media screen and (max-width:854px) {
+  .content .left {
+    height: 5%;
+  }
+}
+
+
+.slider-image {
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 100%;
+  height: 80%;
+  /* background-color: blue; */
+}
+/*ito niova xD*/
+.default {
+  position: absolute;
+  top:0%;
+  left:0%;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 280px;
+}
+/*niova xD*/
+.ambony {
+  position: relative;
+  display: flex;
+  /* background-color: aquamarine; */
+}
+
+@media screen and (max-width:1047px) {
+  .slider-image {
+    height: 200px;
+  }
+  .ambany {
+    margin-top: 35px;
+  }
+}
+.slider-image img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.ambony {
+  display: flex;
+  flex-wrap: wrap;
+ height: 38%;
+ margin-bottom: 8px;
+
+}
+.slider {
+  /* background-color: bisque; */
+  flex: 1;
+  min-width: 323px;
+ 
+  
+}
+.info-slider {
+  flex: 0.5;
+  padding-left: 20px;
+ 
+}
+.info-slider a{
+  font-size: 0.9em;
+  color: #FFAB00;
+  text-decoration: underline;
+}
+.info-slider h2 {
+  font-size: 1.5em;
+}
+
+
+.ambany {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 30%;
+  
+}
+
+.ambany .card {
+  display: flex;
+  width: 30%;
+  min-width: 151px;
+  height:100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  border-radius: 15px;
+  background-color: white;
+box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+transition: .5s;
+cursor: pointer;
+z-index: 55;
+}
+@media screen and (max-width:854px) {
+  .ambany #card {
+    padding-top: 1%;
+  }
+}
+
+.ambany .card:hover {
+transform: scale(1.1);
+}
+.ambany .details {
+  font-size: 0.8em;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.ambany .details a {
+  color: #FFAB00;
+  text-decoration: underline;
+  transition: .5s ease-in;
+}
+.ambany .details a:hover {
+  color: #0937c0;
+}
+.ambany .card:nth-child(2){
+  margin-left: 20px;
+}
+
+
+.ambany .card .contenant {
+  width: 85%;
+  height: 85%;
+
+
+  height: 40%;
+}
+
+.ambany .card .contenant img{
+
+  border: 0.2 solid white;
+  width: 100%;
+  height: 100%;
+}
+
+.ambany .card .contenants {
+ 
+
+  width: 83%;
+  height: 83%;
+  height: 45%;
+}
+
+.ambany .card .contenants img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.responsive-menu {
+  position: absolute;
+  left: -24%;
+  top: -120%;
+  width: 11%;
+  display: flex;
+  flex-direction: column;
+justify-content: center; 
+  width: 65px;
+}
+.responsive-menu a{
+  font-size: 0.8em;
+  text-align: center;
+  transition: .5s;
+
+}
+.responsive-menu a:hover{
+font-size: 0.9;
+text-decoration:underline ;
+color: #edba56;
+}
+@media screen and (min-width:854px) {
+  .responsive-menu {
+    display: none;
+  }
+}
+
+.responsive-menu .avatar {
+  border-radius: 50%;
+  height: 150%;
+  width: 45px;
+  /* margin-bottom: 7px; */
+  /* margin-right: 180px; */
+  /* background-color: aqua; */
+}
+
+.responsive-menu  .avatar .avatar-image img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width:854px) {
+  .content {
+display: flex;
+flex-direction: column;
+align-items: center;
+  }
+  .ambony {
+    display: block;
+  }
+  .ambany {
+justify-content: center;
+  }
+
+  body {
+    overflow-wrap: break-word;
+  }
+  .menu-user {
+    display: none;
+  }
+  .responsive-menu {
+    display: initial;
+  }
+
+}

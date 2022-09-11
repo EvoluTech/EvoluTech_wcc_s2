@@ -1,0 +1,59 @@
+body {
+  overflow: hidden;
+}
+@media screen and (max-width: 854px) {
+  body {
+    overflow-y: visible;
+  }
+  .container {
+    overflow: hidden;
+  }
+}
+
+/*Courbe partie*/
+body .courbe .courbe-img {
+  position: absolute;
+  /* top: -800px; */
+  right: 23%;
+  height: 145vh;
+  transform: rotate(9deg);
+  z-index: -2;
+  transition: 0.8s;
+  /* width: ; */
+}
+@media screen and (max-height: 1081px) {
+  body .courbe .courbe-img {
+    top: -150px;
+  }
+}
+
+
+/* clipPath partie droite */
+body .clip-path-1 {
+  width: 105%;
+  height: 100vh;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: -5;
+  clip-path: polygon(
+    50% 0%,
+    71% 0,
+    66% 26%,
+    54% 54%,
+    48% 78%,
+    40% 100%,
+    0 100%,
+    0% 70%,
+    0% 35%,
+    0 0
+  );
+}
+
+/* clipPath partie gauche */
+body .clip-path-2 {
+  width: 100%;
+  height: 100vh;
+  background-color: #f5f6f7;
+  position: absolute;
+  z-index: -6;
+}

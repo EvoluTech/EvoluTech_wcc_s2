@@ -1,0 +1,91 @@
+@media screen and (max-width: 500px) {
+  body {
+    /* display: none; */
+  }
+  .container {
+    padding-right: 5%;
+    padding-left: 5%;
+    z-index: 2;
+  }
+  .content {
+    flex-direction: column;
+  }
+  body .clip-path-2 {
+    background-color: #fbfbfba6;
+    height: 100%;
+  }
+  body .clip-path-1 {
+    background-color: #ffffff;
+    height: 100%;
+    width:65%;
+  }
+  
+  .content .right .box .c-right .avatars .peoples-2::before,
+.peoples-3::before,
+.peoples-4::before {
+  background-color: #f3f0f0;
+}
+  .content .right .box .card-1 {
+    padding-left: 0%;
+    flex-direction: column;
+    border: 1px solid rgba(211, 204, 204, 0.157);
+    box-shadow: 0px 0px 20px 1px rgba(211, 210, 210, 0.427);
+    align-items: center;
+    position: relative;
+    border-radius: 4px;
+    cursor: pointer;
+    padding-bottom: 1px;
+    transition: 0.3s;
+  }
+  .content .right .box .card-1:hover {
+   transform: scale(1.1);
+  }
+  .content .right footer .localite p {
+    padding-left: 0%;
+  }
+  
+  .content .right footer .localite {
+    padding-left: 0%;
+    padding-bottom: 5%;
+    position: relative;
+  }
+  .content .right .box .card-1 .c-left {
+    position: relative;
+    left: -16%;
+  }
+  .content .right .box .card-1 .casque {
+    margin: 0px 40px;
+    position: relative;
+    top: 20px;
+  }
+  .content .right .box .card-1 .c-left .lengende {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1em;
+    /* background-color: blueviolet; */
+    width: 180px;
+  }
+  .content .right .box .c-right .avatars .quatre {
+    display: flex;
+    position: relative;
+    left: 23%;
+  }
+  .content .right .box .c-right .avatars .trois {
+    display: flex;
+    position: relative;
+    left: 22px;
+  }
+  .content .right .box .c-right .avatars .un {
+    display: flex;
+    position: relative;
+    left: 20px;
+  }
+  .content .right .box .c-right i {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 8%;
+    right: 4%;
+  }
+}
